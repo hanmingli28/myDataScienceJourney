@@ -1,0 +1,192 @@
+<HTML>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<style>
+body {
+	font-family:verdana;
+
+    background-color: white;
+
+    background-image: ;
+    background-color: ;
+
+}
+
+.headerLogo{
+  top:-65px;
+  height:200px;
+  line-height:150px;
+  width:100%;
+  max-width:1357px;
+  overflow:hidden;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004d99;
+    max-width:1357px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.data {background:darkblue;}
+td {
+    padding: 15px;
+    text-align: left;
+    
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+}
+
+table{
+    max-width:1920px;
+}
+
+p.shifted {
+    margin-left: 50px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.my-element {
+  filter: drop-shadow(0 0.5rem 0.5rem rgba(0, 0, 0, 0.6));
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="headerLogo">
+        <img src="http://hanmingli.georgetown.domains/pics/shanghai.jpg"
+        height = 300 width = 1357 >
+    </div>
+
+    <ul>
+        <li>
+            <a href="http://hanmingli.georgetown.domains">Home</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/AboutMe.html">About me</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Introduction.html">Introduction</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataGather.html">Data Gathering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataCleaning.html">Data Cleaning</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataExploring.html">Exploring Data</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Clustering.html">Clustering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/ARM.html">ARM and Networking</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DecisionTree.html">Decision Trees</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Bayes.html">Naive Bayes</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/SVM.html">SVM</a>
+        </li>
+        
+        <li class="data">
+            <a href="http://hanmingli.georgetown.domains/Conclusion.html">Conclusion</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Infographic.html">Infographic</a>
+        </li>
+    </ul>
+    
+    <p><strong><font size = "+1">Overview</font></strong></p>
+        <p>This portfolio analyzed California wildfire data from 2013 to 2019, and news data from news reports in an attempt to figure out the underlying connections and implications. To begin with, the statistics of the California wildfire dataset is obtained, which reveals the answer to some of the proposed data science questions. In addition, various machine learning methods were used to first separate the dataset into different categories (labeling), and then build predictive model that could learn from the labeled data and categorize new wildfire data into different types based on the severity of the fire.</p>
+        
+    <p><strong><font size = "+1">Discoveries and Thoughts</font></strong></p>
+        <p>Now if we revisit the data science questions that we proposed in the beginning, we will find that we have found the answer to the first question.</p>
+        
+        <p class="shifted"><i>1.    Is the wildfire getting worse over the years, especially in California?</i> </p>
+        <p class="shifted"> According to the California Wildfire Dataset which contains all recorded wildfire incidents, the number of wildfire incidents experienced a significant increase from 2016 to 2017, from 150 counts to over 400 counts. Although that number dropped a bit in the following two years, but the overall trend for the number of wildfire incidents in California is still increasing. Also, Naïve Bayes model, which is based on conditional probabilities, suggests that the probability of having a major fire incident has a general increasing trend from 2013 to 2019. Hence, it can be concluded that the wildfire situation in California is indeed getting worse over the years both in terms of the number of incidents as well as the severity of the fire.</p>
+        
+        <div class="center my-element">
+            <img src="http://hanmingli.georgetown.domains/pics/intro & conc/fire1.jpg" width = 70%>
+        </div>
+            
+        <p>Unfortunately, the rest of the questions remain unanswered. It is because most of them are actually very complex and don’t have an easy, one-sentence answer to them. For example, in order to answer the question if the occurrence of wildfire has any correlation with global warming, one would need to dive deep into the cause of each wildfire incident in detail, if one is lucky enough to obtain those data, and filter out all incidents that were related to global warming, which is something already very difficult to define. Then, one would need to apply extensive statistical analysis in order to prove the relationship between those fire incidents and global warming, which means one would also need to acquire and analyze data that could quantify the state of global warming. In other words, such data science questions actually deserve their own portfolio. </p>
+        <p>Now let’s move away from the questions, and take a look at some other interesting results uncovered during data analysis. To begin with, it is found that whether a wildfire incident can be categorized as a major incident or not has a strong relationship with characteristics of the fire such as the area of land burned, the number of people involved/injures, the number of structure damaged/destroyed. It is also found that a major wildfire incident could burn through 12000 acres of land, whereas other minor wildfires could only burn through over 1000 acres. In addition, hundreds of people are often involved when there is a major wildfire, whereas only a few people would be involved in a minor wildfire. This result reiterates the devastating power of a major wildfire.</p>
+        <p>Furthermore, the analysis based on text data found that people often associate words like severe, devastating and stop with wildfire, which shows how people are aware of how destructive and unstoppable wildfires can be. It is clear that we really need to focus on how we could prevent wildfires from happening and mitigate the impact of wildfire if they inevitably happened. </p>
+        <p>Lastly, there are plenty of ways to bring this portfolio into the next stage. Additional wildfire data that contains geographical information could be acquired. Based on the result of this portfolio, the geographical data could be categorized into either major or minor fire incidents. Then, by combining the data label with its geographical distribution, the risk of having a major wildfire could be determined for all the region included in the data. This risk prediction could be used as a guidance for the local government and forest protection department in terms of wildfire prevention. </p>
+</body>
+
+</HTML>

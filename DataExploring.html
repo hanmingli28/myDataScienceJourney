@@ -1,0 +1,235 @@
+<HTML>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<style>
+body {
+	font-family:verdana;
+
+    background-color: white;
+
+    background-image: ;
+    background-color: ;
+
+}
+
+.headerLogo{
+  top:-65px;
+  height:200px;
+  line-height:150px;
+  width:100%;
+  max-width:1357px;
+  overflow:hidden;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004d99;
+    max-width:1357px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.data {background:darkblue;}
+td {
+    padding: 15px;
+    text-align: left;
+    
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+}
+
+table{
+    max-width:1357px;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="headerLogo">
+        <img src="http://hanmingli.georgetown.domains/pics/shanghai.jpg"
+        height = 300 width = 1357 >
+    </div>
+
+    <ul>
+        <li>
+            <a href="http://hanmingli.georgetown.domains">Home</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/AboutMe.html">About me</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Introduction.html">Introduction</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataGather.html">Data Gathering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataCleaning.html">Data Cleaning</a>
+        </li>
+        
+        <li  class="data">
+            <a href="http://hanmingli.georgetown.domains/DataExploring.html">Exploring Data</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Clustering.html">Clustering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/ARM.html">ARM and Networking</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DecisionTree.html">Decision Trees</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Bayes.html">Naive Bayes</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/SVM.html">SVM</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Conclusion.html">Conclusion</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Infographic.html">Infographic</a>
+        </li>
+    </ul>
+    
+    <h1>Record Data</h1>
+    <table border="1" width = "100%">
+        <thead>
+        <tr>
+            <td style="text-align: center; width:60%" align="center" valign="top">
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/EDA/record_boxplot.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/EDA/record_boxplot.png" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+            <td style="width:40%" align="center" valign="top">
+                <p><strong>Description</strong></p>
+                <p>The boxplot shows how data of each attribute is distributed around the mean. The data range for AcreBurned, Injuries, and PersonnelInvolved are quite large.</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align: center; width:60%" align="center" valign="top">
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/EDA/record_barplot.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/EDA/record_barplot.png" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+            <td style="width:40%" align="center" valign="top">
+                <p><strong>Description</strong></p>
+                <p>A barplot is created to show the frequency of values for each attribute.</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align: center; width:60%" align="center" valign="top">
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/EDA/record_stats1.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/EDA/record_stats1.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+            <td style="width:40%" align="center" valign="top">
+                <p><strong>Description</strong></p>
+                <p>Common statistics of each attribute.</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align: center; width:60%" align="center" valign="top">
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/EDA/QQplot.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/EDA/QQplot.png" width="80%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+            <td style="width:40%" align="center" valign="top">
+                <p><strong>Description</strong></p>
+                <p>Q-Q plot for $AcresBurned. The plot indicates that values of $AcresBurned are not normally distributed.</p>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    
+    <h1>Text Data</h1>
+    <table border="1" width = "100%">
+        <thead>
+        <tr>
+            <td style="text-align: center" align="center" valign="top">
+                <p><strong>WordCloud For Different Labels</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/wordcloud_dt.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/wordcloud_dt.png" width="50%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    
+</body>
+
+</HTML>

@@ -1,0 +1,268 @@
+<HTML>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<style>
+body {
+	font-family:verdana;
+
+    background-color: white;
+
+    background-image: ;
+    background-color: ;
+
+}
+
+.headerLogo{
+  top:-65px;
+  height:200px;
+  line-height:150px;
+  width:100%;
+  max-width:1357px;
+  overflow:hidden;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004d99;
+    max-width:1357px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.data {background:darkblue;}
+td {
+    padding: 15px;
+    text-align: left;
+    
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+}
+
+table{
+    max-width:1920;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="headerLogo">
+        <img src="http://hanmingli.georgetown.domains/pics/shanghai.jpg"
+        height = 300 width = 1357 >
+    </div>
+
+    <ul>
+        <li>
+            <a href="http://hanmingli.georgetown.domains">Home</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/AboutMe.html">About me</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Introduction.html">Introduction</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataGather.html">Data Gathering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataCleaning.html">Data Cleaning</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataExploring.html">Exploring Data</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Clustering.html">Clustering</a>
+        </li>
+        
+        <li class="data">
+            <a href="http://hanmingli.georgetown.domains/ARM.html">ARM and Networking</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DecisionTree.html">Decision Trees</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Bayes.html">Naive Bayes</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/SVM.html">SVM</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Conclusion.html">Conclusion</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Infographic.html">Infographic</a>
+        </li>
+    </ul>
+    
+    <h1>About the Data</h1>
+    <table border="1" width = "100%">
+        <col style="width:20%">
+        <col style="width:50%">
+        <col style="width:30%">
+        <thead>
+        <tr>
+            <td valign="top">
+                <p><strong>Links to files:</strong></p>
+                <br><a href="http://hanmingli.georgetown.domains/codes/ARM.R" target="_blank"><strong>(1) [R code] for ARM and Network Visualizaiton</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/CleanData/UpdatedTweetFile.csv"><strong>(2) Transaction Data for ARM</strong></a>
+            </td>
+            
+            <td style="text-align: center;" valign="top">
+                <p><strong>Transaction Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/ARM_clean_data.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/ARM_clean_data.jpg" width="600" border="0" align="center"  >
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+            <td valign="top">
+                <p><strong>Description</strong></p>
+                <p>The transaction data, which is obtained via Twitter API, contains tweets on the topic of wildfire. The original text data is cleaned and transformed to the transaction data shown. Each row of the dataset represents one original tweet, with no duplicate words.</p>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    
+    <h1>Association Rule Mining (ARM) Rules</h1>
+    <table border="1" width = "100%">
+        <thead>
+        <tr>
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong>Top 15 Rules For Support</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/ARM_sup.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/ARM_sup.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong>Top 15 Rules For Confidence</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/ARM_conf.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/ARM_conf.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong>Top 15 Rules For Lift</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/ARM_lift.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/ARM_lift.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>The top rules for support shows that {join} -> {wildfire} has the highest score. Since support measures the frequency of a itemset in a dataset, it indicates that these two words appear together the most often.</td>
+            <td>The top rules for confidence all have confidence score = 1 because the threshold of confidence is set to be 1. Confidence is an indication of how often the rule has been found to be true.</td>
+            <td>Lift is an indication of if the itemsets involved in the rule are associated with each other or independent. It also measures how strongly itemsets are associated. The 15 top rules for Lift shows that {severe} is heavily associated with {seasons} with a Lift score of 21.</td>
+        </tr>
+        </thead>
+    </table>
+    
+    <h1>Network Visualizations</h1>
+    <table border="1" width = "100%">
+        <thead>
+        <tr>
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <br><a href="http://hanmingli.georgetown.domains/pics/ARM_NetD3.html" target="_blank"><strong><font size="+2">Network3D [Interactive Data Vis.]</font></strong></a><br>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/ARM_Net3D.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/ARM_Net3D.jpg" width="100%" height="100%">
+                </a>
+            </td>
+            
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong><font size="+2">igraph</font></strong></p><br>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/ARM_igraph.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/ARM_igraph.jpg" width="100%" height="100%">
+                </a>
+            </td>
+            
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <br><a href="http://hanmingli.georgetown.domains/pics/ARM_VisNetwork.html" target="_blank"><strong><font size="+2">visNetwork [Interactive Data Vis.]</font></strong></a><br>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/ARM_visNet.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/ARM_visNet.jpg" width="100%" height="100%">
+                </a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Lift rules are used to generate the visualization, which indiates that {severe} and {seasons} have the strongest assocation with each other, and with other itemsets</td>
+            <td>Lift rules are used to generate the visualization, which indiates that {severe} and {seasons} have the strongest assocation with each other, and with other itemsets</td>
+            <td>Lift rules are used to generate the visualization, which indiates that {severe} and {seasons} have the strongest assocation with each other, and with other itemsets</td>
+        </tr>
+        </thead>
+    </table>
+    
+    <h1>
+        Discussion
+    </h1>
+    <p><font size="+2">The three network visualizations showcased above indicate that the itemset {severe} is heavily associated with {seasons}. This phenomenon is easy to understand as people tend to discuss the severity of the wildfire with respect to the season where the fire took place.</font></p>
+    <p><font size="+2">In addition, the high occurence of itemsets such as {severe}, {devastating}, {stop} shows that the severity of the wildire,the damage caused by the fire and how to stop/contain the fire are one of the most common things people tweet about when comes to wildfire. Also, the high occurence of {severe} is an indication of the devastating power of wildfire since the itemset is almost ubiquitous in the network.</font></p>
+    
+    
+    
+    
+</body>
+
+</HTML>

@@ -1,0 +1,87 @@
+---
+title: "svm_record"
+author: "Hanming Li"
+date: "2021/11/25"
+output: html_document
+---
+
+```{r}
+library(e1071)  # for machine learning methods
+# install.packages("mlr")
+library(mlr)
+library(caret)
+library(datasets)
+library(ggplot2)
+library(MASS)
+```
+
+```{r}
+setwd("D:/GU/School Work/Fall 21/ANLY 501/assignment 1/cleaned data/")
+
+wfData="California_Fire_Incidents_cleaned_112521.csv"
+head(wfDF<-read.csv(wfData))
+```
+```{r}
+# correct data types
+str(wfDF)
+wfDF$ArchiveYear <- as.factor(wfDF$ArchiveYear)
+wfDF$MajorIncident <- as.factor(wfDF$MajorIncident)
+
+# split dataset
+samplerownums<- sample(nrow(wfDF),nrow(wfDF)*0.2)
+# Test: remove and keep label
+(df_test <- wfDF[samplerownums, ])
+(test_Label <- df_test[,c(9)])
+df_test <- df_test[,-c(1,9)]
+head(df_test)
+nrow(df_test)
+# Train: keep label
+df_train <- wfDF[-samplerownums, ]
+df_train <- df_train[,-c(1)]
+head(df_train)
+nrow(df_train)
+```
+```{r}
+#1
+SVM_fit_L <- svm(MajorIncident~., data = df_train,
+                 kernel="linear", cost=0.01, 
+                 scale=FALSE)
+print(SVM_fit_L)
+pred_L <- predict(SVM_fit_L, df_test, type="class")
+(Ptable <- table(pred_L, test_Label))
+
+plot(SVM_fit_L, data=df_train, AcresBurned~PersonnelInvolved
+)
+
+(CM_L<-confusionMatrix(pred_L, test_Label))
+```
+
+```{r}
+#2
+SVM_fit_P <- svm(MajorIncident~., data = df_train,
+                 kernel="polynomial", cost=100, 
+                 scale=FALSE)
+print(SVM_fit_P)
+pred_P <- predict(SVM_fit_P, df_test, type="class")
+(Ptable <- table(pred_P, test_Label))
+
+plot(SVM_fit_P, data=df_train, AcresBurned~PersonnelInvolved
+)
+
+(CM_L<-confusionMatrix(pred_P, test_Label))
+```
+
+```{r}
+#3
+SVM_fit_R <- svm(MajorIncident~., data = df_train,
+                 kernel="radial", cost=1, 
+                 scale=FALSE)
+print(SVM_fit_R)
+pred_R <- predict(SVM_fit_R, df_test, type="class")
+(Ptable <- table(pred_R, test_Label))
+
+plot(SVM_fit_R, data=df_train, AcresBurned~PersonnelInvolved
+)
+
+(CM_L<-confusionMatrix(pred_R, test_Label))
+```

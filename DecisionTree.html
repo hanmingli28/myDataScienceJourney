@@ -1,0 +1,329 @@
+<HTML>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<style>
+body {
+	font-family:verdana;
+
+    background-color: white;
+
+    background-image: ;
+    background-color: ;
+
+}
+
+.headerLogo{
+  top:-65px;
+  height:200px;
+  line-height:150px;
+  width:100%;
+  max-width:1357px;
+  overflow:hidden;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004d99;
+    max-width:1357px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.data {background:darkblue;}
+td {
+    padding: 15px;
+    text-align: left;
+    
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+}
+
+table{
+    max-width:1920px;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="headerLogo">
+        <img src="http://hanmingli.georgetown.domains/pics/shanghai.jpg"
+        height = 300 width = 1357 >
+    </div>
+
+    <ul>
+        <li>
+            <a href="http://hanmingli.georgetown.domains">Home</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/AboutMe.html">About me</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Introduction.html">Introduction</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataGather.html">Data Gathering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataCleaning.html">Data Cleaning</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataExploring.html">Exploring Data</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Clustering.html">Clustering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/ARM.html">ARM and Networking</a>
+        </li>
+        
+        <li class="data">
+            <a href="http://hanmingli.georgetown.domains/DecisionTree.html">Decision Trees</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Bayes.html">Naive Bayes</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/SVM.html">SVM</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Conclusion.html">Conclusion</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Infographic.html">Infographic</a>
+        </li>
+    </ul>
+    
+    <h1>Data & Codes</h1>
+    <table border="1" width = "100%">
+        <col style="width:20%">
+        <col style="width:40%">
+        <col style="width:40%">
+        <thead>
+        <tr>
+            <td valign="top">
+                <p><strong>Links to files:</strong></p>
+                <br><a href="http://hanmingli.georgetown.domains/codes/dt_record_data.R" target="_blank"><strong>(1) [R code] for Decision Tree on Record Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/codes/dt_text_data.py" target="_blank"><strong>(2) [Python code] for Decision Tree on Text Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/CleanData/California_Fire_Incidents_cleaned_111321.csv" target="_blank"><strong>(3) Cleaned Record Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/CleanData/Labeled_News_Data_from_API_111321.csv"><strong>(4) Cleaned Text Data</strong></a>
+            </td>
+            
+            <td style="text-align: center;" valign="top">
+                <p><strong>Record Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/dt_record.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/dt_record.jpg" width="600" border="0" align="center"  >
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+            </td>
+            
+            <td style="text-align: center;" valign="top">
+                <p><strong>Text Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/dt_text.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/dt_text.jpg" width="600" border="0" align="center"  >
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+                <p><strong>WordCloud</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/wordcloud_dt.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/wordcloud_dt.png" width="300" border="0" align="center">
+                </a>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    
+    <br><br><h1>Decision Tree for Record Data with R</h1>
+    <table border="1" width = "100%">
+        <col style="width:33%">
+        <col style="width:33%">
+        <col style="width:33%">
+        <thead>
+        <tr>
+            <td style="text-align: center;">
+                <p><strong><font size="+2">Decision Tree #1</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/dt1.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/dt1.png" width="450" border="0" align="center"  >
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/1_acc1.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/1_acc1.jpg" width="300" border="0" align="center"  >
+                </a>
+                <p><strong><i>Accuary: 1.0</i></strong></p>
+            </td>
+            
+            <td style="text-align: center;">
+                <p><strong><font size="+2">Decision Tree #2</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/dt2.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/dt2.png" width="450" border="0" align="center"  >
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/2_acc0.40.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/2_acc0.40.jpg" width="300" border="0" align="center"  >
+                </a>
+                <p><strong><i>Accuary: 0.40</i></strong></p>
+            </td>
+            
+            <td style="text-align: center;">
+                <p><strong><font size="+2">Decision Tree #3</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/dt3.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/dt3.png" width="450" border="0" align="center"  >
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/3_acc0.51.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/3_acc0.51.jpg" width="300" border="0" align="center"  >
+                </a>
+                <p><strong><i>Accuary: 0.51</i></strong></p>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    <table border="1" width = "100%">
+        <tr>
+            <td>
+                <p><strong><font size="+2">Discussion</font></strong></p>
+                <font size = "+2">
+                    <p>The key feature of the dataset is "AcresBurned". Decision tree #1 is created solely based on "AcresBurned", and it produces the most accurate result with a prediction accuracy of 1, which suggests that the label of the dataset is probably created based on the feature "AcresBurned".</p>
+                    
+                   <p> Decision tree #2 and #3 were constructed to investigate how parameter cp would affect the accuracy of prediction. Decision tree #2 has cp = 0.05, while decision tree #3 has cp = 0.03. A greater cp would result in a less complex tree structure, which tend to have less overfitting in theory. However, in this case, a smaller cp (tree #3) with a more complex tree structure is actually more accurate. </p>
+                </font>
+            </td>
+        </tr>
+    </table>
+    
+    <br><br><h1>Decision Tree for Text Data with Python</h1>
+    <table border="1">
+        <thead>
+        <tr>
+            <td style="width:33%;" align="center" valign="top">
+                <br><p><strong><font size="+2">Decision Tree #1</font></strong></p><br>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/MyTree_entropy_acc0.75.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/MyTree_entropy_acc0.75.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+                
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/entropy_0.75.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/entropy_0.75.png" width="100%" height="100%">
+                </a>
+                
+                <p><strong><i>Accuary: 0.75</i></strong></p>
+            </td>
+            
+            <td style="width:33%;" align="center" valign="top">
+                <br><p><strong><font size="+2">Decision Tree #2</font></strong></p><br>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/d5_0.444.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/d5_0.444.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+                
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/depth5_0.444.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/depth5_0.444.png" width="100%" height="100%">
+                </a>
+                <p><strong><i>Accuary: 0.44</i></strong></p>
+            </td>
+            
+            <td style="width:33%;" align="center" valign="top">
+                <br><p><strong><font size="+2">Decision Tree #3</font></strong></p><br>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/d10_0.694.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/d10_0.694.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+                
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/depth10_0.694.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/depth10_0.694.png" width="100%" height="100%">
+                </a>
+                <p><strong><i>Accuary: 0.69</i></strong></p>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    <table border="1" width = "100%">
+        <tr>
+            <td>
+                <p><strong><font size="+2">Discussion</font></strong></p>
+                <font size = "+2">
+                    <p>The common root node is "wildfire" for all three trees. The goal is to investigate how parameter max_depth would affect the accuracy of prediction. To control the variable, all three decision trees are based on entropy. Tree #1 has max_depth = none, which means there is no limit on the depth of the tree. Thereofre, the tree will extend until all leaf nodes are pure. Tree #2 and #3 has max_depth = 5 and 10, respectively. Based on confusion matrices, tree #1 has the highest accuracy of 0.75. Tree #3 has a slight worse accuracy of 0.69, while tree #2 has the lowest accuracy of 0.44 among the three. The result suggests that if max_depth is too low, it would cause the decision tree to be inaccurate. However, it should be noted that if max_depth is too high, it would make the tree structure very complex, which could lead to overfitting.  </p>
+                </font>
+            </td>
+        </tr>
+    </table>
+    
+    <h1>Random Forest for Text Data with Python</h1>
+    <a target="_blank" href="http://hanmingli.georgetown.domains/pics/random_forest.png" onClick='test(this)'>
+        <img src="http://hanmingli.georgetown.domains/pics/random_forest.png" width="800" border="0" align="center">
+    </a>
+    
+    <a target="_blank" href="http://hanmingli.georgetown.domains/pics/RF_acc0.66.png" onClick='test(this)'>
+        <img src="http://hanmingli.georgetown.domains/pics/RF_acc0.66.png" width="450" border="0" align="center">
+    </a>
+    
+    <font size="+2">
+        <p><strong><i>Accuary: 0.666</i></strong></p>
+    
+        <p>The accuracy of random forest is generally better than decision trees without extensive tunning. The random forest no longer shares the same root node as decision trees. Random forest seems to have relatively even accuracy for predicting each classes.</p>
+    </font>
+</body>
+
+</HTML>

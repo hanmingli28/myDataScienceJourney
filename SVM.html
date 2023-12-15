@@ -1,0 +1,318 @@
+<HTML>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<style>
+body {
+	font-family:verdana;
+
+    background-color: white;
+
+    background-image: ;
+    background-color: ;
+
+}
+
+.headerLogo{
+  top:-65px;
+  height:200px;
+  line-height:150px;
+  width:100%;
+  max-width:1357px;
+  overflow:hidden;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004d99;
+    max-width:1357px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.data {background:darkblue;}
+td {
+    padding: 15px;
+    text-align: left;
+    
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+}
+
+table{
+    max-width:1920px;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="headerLogo">
+        <img src="http://hanmingli.georgetown.domains/pics/shanghai.jpg"
+        height = 300 width = 1357 >
+    </div>
+
+    <ul>
+        <li>
+            <a href="http://hanmingli.georgetown.domains">Home</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/AboutMe.html">About me</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Introduction.html">Introduction</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataGather.html">Data Gathering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataCleaning.html">Data Cleaning</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataExploring.html">Exploring Data</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Clustering.html">Clustering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/ARM.html">ARM and Networking</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DecisionTree.html">Decision Trees</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Bayes.html">Naive Bayes</a>
+        </li>
+        
+        <li class="data">
+            <a href="http://hanmingli.georgetown.domains/SVM.html">SVM</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Conclusion.html">Conclusion</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Infographic.html">Infographic</a>
+        </li>
+    </ul>
+    
+    <h1>Data & Codes</h1>
+    <table border="1" width = "100%">
+        <thead>
+        <tr>
+            <td style="width:20%" align="center" valign="top">
+                <p><strong>Links to files:</strong></p>
+                <br><a href="http://hanmingli.georgetown.domains/codes/svm_RecordData.Rmd" target="_blank"><strong>(1) [R code] for SVM on Record Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/codes/svm_TextData.py" target="_blank"><strong>(2) [Python code] for SVM on Text Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/CleanData/California_Fire_Incidents_cleaned_112521.csv" target="_blank"><strong>(3) Cleaned Record Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/CleanData/NewsData_cleaned_112521.csv"><strong>(4) Cleaned Text Data</strong></a>
+            </td>
+            
+            <td style="text-align: center; width:40%" align="center" valign="top">
+                <p><strong>Record Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/RecordDataPreview.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/RecordDataPreview.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+            </td>
+            
+            <td style="text-align: center; width:40%" align="center" valign="top">
+                <p><strong>Text Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/TextDataPreview.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/TextDataPreview.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+                <p><strong>WordCloud</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/wordcloud_dt.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/wordcloud_dt.png" width="50%">
+                </a>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    
+    <br><br><h1>SVM for Record Data with R</h1>
+    <table border="1" width = "100%">
+        <thead>
+        <tr>
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong><font size="+2">SVM with Linear Kernal</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_LinearModel_record.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_LinearModel_record.jpg" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Classification Plot</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_plot_linear_record.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_plot_linear_record.png" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/CM_linear_record.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/CM_linear_record.jpg" width="450" border="0" align="center"  >
+                </a>
+            </td>
+            
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong><font size="+2">SVM with Polynomial Kernal</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_PolyModel_record.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_PolyModel_record.jpg" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Classification Plot</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_plot_poly_record.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_plot_poly_record.png" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/CM_poly_record.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/CM_poly_record.jpg" width="450" border="0" align="center"  >
+                </a>
+            </td>
+            
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong><font size="+2">SVM with Radial Kernal</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_RBFModel_record.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_RBFModel_record.jpg" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Classification Plot</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_plot_RBF_record.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_plot_RBF_record.png" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/CM_RBF_record.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/CM_RBF_record.jpg" width="450" border="0" align="center"  >
+                </a>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    <table border="1" width = "100%">
+        <tr>
+            <td>
+                <p><strong><font size="+2">Discussion</font></strong></p>
+                <font size = "+2">
+                    <p>As shown by the confusion matrices, SVM with a liner kernal seems to be the most effective model among the three as it has the highest overall accuracy of 0.90 for predicting the class. The cost of the linear kernal is optimized to be 0.01. The classification plot shows a clear separation of data for AcresBurned against PersonnelInvolved. Both SVM with a polynomial kernal and a radial kernal fail to perform well. Although the overall accuracy for these two models are considerably high, at around 0.76, the two models are actually useless. The seemingly high accuracy is largely due to the fact that the dataset is imbalanced with most of the data being labeled FALSE. Since the model basically predicts everything to be FALSE, the accuracy of prediction naturally becomes high as there are many FALSE class data.</p>
+                </font>
+            </td>
+        </tr>
+    </table>
+    
+    <br><br><h1>SVM for Text Data with Python</h1>
+    <table border="1" width = "100%">
+        <thead>
+        <tr>
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong><font size="+2">SVM with Linear Kernal</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_report_linear_c5.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_report_linear_c5.png" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/CM_linear_c5.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/CM_linear_c5.png" width="450" border="0" align="center"  >
+                </a>
+            </td>
+            
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong><font size="+2">SVM with Polynomial Kernal</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_report_poly_c1.5e5.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_report_poly_c1.5e5.png" width="100%" height="100%">
+                </a>
+
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/CM_poly_c1.5e5.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/CM_poly_c1.5e5.png" width="450" border="0" align="center"  >
+                </a>
+            </td>
+            
+            <td style="text-align: center; width:33%" align="center" valign="top">
+                <p><strong><font size="+2">SVM with Radial Kernal</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/svm_report_RBF_c20.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/svm_report_RBF_c20.png" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/svm/CM_RBF_c20.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/svm/CM_RBF_c20.png" width="450" border="0" align="center"  >
+                </a>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    <table border="1" width = "100%">
+        <tr>
+            <td>
+                <p><strong><font size="+2">Discussion</font></strong></p>
+                <font size = "+2">
+                    <p>For text data, all three SVM models delivered similar performance. The linear kernal model, the polynomial kernal model and the radial kernal model have a overall accuracy of prediction of 0.87, 0.7 and 0.83, respectively. However, it is still worth noting that the dataset is imbalance with significantly more NOT_WF class and less WF class, with undermines the integrity of the model. </p>
+                </font>
+            </td>
+        </tr>
+    </table>
+    
+    <h1>Conclusion</h1>
+    <font size="+2"><p>In conclusion, for the record data on wildfire, it is found that a SVM with linear kernal model has the best performance for predicting whether a wildfire should be classified as a major incident. For the text data, it is determined that both SVM with linear kernal model and with radial model provide good accuracy in predicting whether a piece of news article is about wildfire or not. </strong></p>
+    </font>
+</body>
+
+</HTML>

@@ -1,0 +1,303 @@
+<HTML>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<style>
+body {
+	font-family:verdana;
+
+    background-color: white;
+
+    background-image: ;
+    background-color: ;
+
+}
+
+.headerLogo{
+  top:-65px;
+  height:200px;
+  line-height:150px;
+  width:100%;
+  max-width:1357px;
+  overflow:hidden;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004d99;
+    max-width:1357px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.data {background:darkblue;}
+td {
+    padding: 15px;
+    text-align: left;
+    
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+}
+
+table{
+    max-width:1920px;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="headerLogo">
+        <img src="http://hanmingli.georgetown.domains/pics/shanghai.jpg"
+        height = 300 width = 1357 >
+    </div>
+
+    <ul>
+        <li>
+            <a href="http://hanmingli.georgetown.domains">Home</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/AboutMe.html">About me</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Introduction.html">Introduction</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataGather.html">Data Gathering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataCleaning.html">Data Cleaning</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataExploring.html">Exploring Data</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Clustering.html">Clustering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/ARM.html">ARM and Networking</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DecisionTree.html">Decision Trees</a>
+        </li>
+        
+        <li class="data">
+            <a href="http://hanmingli.georgetown.domains/Bayes.html">Naive Bayes</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/SVM.html">SVM</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Conclusion.html">Conclusion</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Infographic.html">Infographic</a>
+        </li>
+    </ul>
+    
+    <h1>Data & Codes</h1>
+    <table border="1" width = "100%">
+        <col style="width:20%">
+        <col style="width:40%">
+        <col style="width:40%">
+        <thead>
+        <tr>
+            <td valign="top">
+                <p><strong>Links to files:</strong></p>
+                <br><a href="http://hanmingli.georgetown.domains/codes/nb_RecordData.R" target="_blank"><strong>(1) [R code] for Naive Bayes on Record Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/codes/nb_TextData.py" target="_blank"><strong>(2) [Python code] for Naive Bayes on Text Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/CleanData/California_Fire_Incidents_cleaned_112521.csv" target="_blank"><strong>(3) Cleaned Record Data</strong></a><br>
+                <br><a href="http://hanmingli.georgetown.domains/CleanData/NewsData_cleaned_112521.csv"><strong>(4) Cleaned Text Data</strong></a>
+            </td>
+            
+            <td style="text-align: center;" valign="top">
+                <p><strong>Record Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/RecordDataPreview.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/RecordDataPreview.jpg" width="600" border="0" align="center"  >
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+            </td>
+            
+            <td style="text-align: center;" valign="top">
+                <p><strong>Text Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/TextDataPreview.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/TextDataPreview.jpg" width="600" border="0" align="center"  >
+                </a>
+                <p><i>Click on the image for better quality</i></p>
+                <p><strong>WordCloud</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/wordcloud_dt.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/wordcloud_dt.png" width="300" border="0" align="center">
+                </a>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    
+    <br><br><h1>Naive Bayes for Record Data with R</h1>
+    <table border="1" width = "100%">
+        <col style="width:40%">
+        <col style="width:20%">
+        <col style="width:20%">
+        <thead>
+        <tr>
+            <td style="text-align: center; width:40%" align="center" valign="top">
+                <p><strong><font size="+2">Naive Bayes Model</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/nb_model_record_r.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/nb_model_record_r.jpg" width="100%" height="100%">
+                </a>
+                
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/nb_CM_record_r.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/nb_CM_record_r.jpg" width="50%">
+                </a>
+            </td>
+            
+            <td style="text-align: center; width:20%" align="center" valign="top">
+                <p><strong><font size="+2">Naive Bayes Vis</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/nb_record_r_1.jpeg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/nb_record_r_1.jpeg" width="100%" height="100%">
+                </a>
+            </td>
+            
+            <td style="text-align: center; width:20%" align="center" valign="top">
+                <p><strong><font size="+2">Naive Bayes Vis</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/nb_record_r_2.jpeg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/nb_record_r_2.jpeg" width="100%" height="100%">
+                </a>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    <table border="1" width = "100%">
+        <tr>
+            <td>
+                <p><strong><font size="+2">Discussion</font></strong></p>
+                <font size = "+2">
+                    <p>Naive Bayes model output interpretation: First of all, the A-prori probabilities indicates that the training dataset is not balanced, with 75% labeled FALSE and only 25% labeled TRUE. The conditional probabilities suggest that attributes AcresBurned, Injuries, PersonnelInvolved and StructuresDestroyed all contribute significantly to label prediction since the mean value of data with label FALSE is significantly different from that with label TRUE for these attributes.</p>
+                    
+                    <p>The confusion matrix shows that the model behaves well in predicting FALSE class data, but not as good when predicting TRUE class data since the model only correctly predicted half of TRUE class data. The visualization also showcase the same result. The inaccuracy when comes to predicting TRUE class data is probably due to the fact the the training data is highly imbalanced, with only 1/4 being TRUE class data.</p>
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p><strong><font size="+2">Conclusion</font></strong></p>
+                <font size = "+2">
+                    <p>In conclusion, to determine whether a wildfire is a major indicent or not, we should look at the area that the fire has spreaded accross, the number of injuries associated with the fire, the number of personnel involved in the process as well as the number of structures being destoryed. A wildfire is very likely to be categorized by the authority to be a major indicent when it has burn through about 12k acres of land, has more than 1 injury, has more than 156 people involved, and lastly, has more than 86 structures destroyed because of the fire.</p>
+                </font>
+            </td>
+        </tr>
+    </table>
+    
+    <br><br><h1>Naive Bayes for Text Data with Python</h1>
+    <table border="1" width = "100%">
+        <col style="width:40%">
+        <col style="width:20%">
+        <col style="width:20%">
+        <thead>
+        <tr>
+            <td style="text-align: center;" valign="top">
+                <p><strong><font size="+2">Naive Bayes Vis</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/nb_model_text.jpg" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/nb_model_text.jpg" width="600" border="0" align="center"  >
+                </a>
+            </td>
+            
+            <td style="text-align: center;" valign="top">
+                <p><strong><font size="+2">Naive Bayes Vis</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/nb_model_text_report.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/nb_model_text_report.png" width="500" border="0" align="center"  >
+                </a>
+            </td>
+            
+            <td style="text-align: center;" valign="top">
+                <p><strong><font size="+2">Confusion Matrix</font></strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/nb/nb_CM_text.png" onClick='test(this)'>
+                    <img src="http://hanmingli.georgetown.domains/pics/nb/nb_CM_text.png" width="300" border="0" align="center"  >
+                </a>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    <table border="1" width = "100%">
+        <tr>
+            <td>
+                <p><strong><font size="+2">Discussion</font></strong></p>
+                <font size = "+2">
+                    <p>Naive Bayes model output interpretation: First of all, the purpose of the NB model is to predict based on text, whether a piece of new article is on the topic of wildfire or not. If yes, then that piece of news is class WF. If no, then it falls into class NOT_WF. The dataset is imbalance with more NOT_WF then WF data. The output of the NB model shows that it has a 0.8 percision in predicting NOT_WF class data, while only a 0.62 percision when comes to WF class data. This is largely due to the imbalanced training dataset.</p>
+                </font>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p><strong><font size="+2">Conclusion</font></strong></p>
+                <font size = "+2">
+                    <p>In conclusion, to achieve a better accuracy in determining whether a piece of news article is about wildfire or not, one should sample balanced data.</p>
+                </font>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</HTML>

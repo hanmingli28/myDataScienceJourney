@@ -1,0 +1,367 @@
+<HTML>
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+<style>
+body {
+	font-family:verdana;
+
+    background-color: white;
+
+    background-image: ;
+    background-color: ;
+
+}
+
+.headerLogo{
+  top:-65px;
+  height:200px;
+  line-height:150px;
+  width:100%;
+  max-width:1357px;
+  overflow:hidden;
+  
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #004d99;
+    max-width:1357px;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: grey;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 160px;
+    
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+li.data {background:darkblue;}
+td {
+    padding: 10px;
+    text-align: left;
+    
+}
+
+tr{
+   padding: 0px;
+   text-align: top;
+}
+
+table{
+    max-width:1920px;
+}
+
+img.two {
+  height: 60%;
+  width: 60%;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="headerLogo">
+        <img src="http://hanmingli.georgetown.domains/pics/shanghai.jpg"
+        height = 300 width = 1357 >
+    </div>
+
+    <ul>
+        <li>
+            <a href="http://hanmingli.georgetown.domains">Home</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/AboutMe.html">About me</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Introduction.html">Introduction</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataGather.html">Data Gathering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataCleaning.html">Data Cleaning</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DataExploring.html">Exploring Data</a>
+        </li>
+        
+        <li class="data">
+            <a href="http://hanmingli.georgetown.domains/Clustering.html">Clustering</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/ARM.html">ARM and Networking</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/DecisionTree.html">Decision Trees</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Bayes.html">Naive Bayes</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/SVM.html">SVM</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Conclusion.html">Conclusion</a>
+        </li>
+        
+        <li>
+            <a href="http://hanmingli.georgetown.domains/Infographic.html">Infographic</a>
+        </li>
+    </ul>
+    
+    <h1>
+        Record Data Clustering
+    </h1>
+    
+    <table border="1" width = "100%">
+        <col style="width:20%">
+        <col style="width:80%">
+        <thead>
+        <tr>
+            <td style="width:30%;" align="center" valign="top">
+                <p><strong>Links to files</strong></p><br>
+                <a href="http://hanmingli.georgetown.domains/CleanData/California_Fire_Incidents_cleaned_101321.csv"><strong>(1) Record dataset for clustering</strong></a><br>  
+                <br><a href="http://hanmingli.georgetown.domains/codes/Record_data_clustering.R" target="_blank"><strong>(2) [R code] for record data clustering</strong></a> 
+            </td>
+            
+            <td style="width:70%;" align="center" valign="top">
+                <p><strong>Record Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/101321/record_data_preview.jpg" onClick='test(this)'>
+                <img style="display:block;" src="http://hanmingli.georgetown.domains/pics/101321/record_data_preview.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    
+    <table border="1">
+        <thead>
+        <tr>
+            <td style="text-align: center;">
+                <p><font size="+2"><strong>I. k-means Clustering</strong></font></p>
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k2.png" width=1400 border = 2px hspace="20" vspace="20">
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k3.png" width=1400 border = 2px hspace="20" vspace="20">
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k4.png" width=1400 border = 2px hspace="20" vspace="20">
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k5.png" width=1400 border = 2px hspace="20" vspace="20">
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k6.png" width=1400 border = 2px hspace="20" vspace="20">
+                
+                <p><strong><font size="+1">--------------------Result Analysis--------------------</font></font></strong></p>
+                <p> From the visualization of k-means clustering shown above, k = 2,3,4,5 are all reasonable choices. k = 6 is not desirable compared to the rest because there are too much overlapping of clusters. </p><br>
+                <p> To evaluate the effectiveness of k-means clustering, the result of clustering is compared with known labels using barplots shown below. By setting k = 4, the general distribution of k-means clustering matches that of known labels, but with a few exceptions. Cluster 1 is primarily label E, cluster 2 corresponds to label A, cluster 3 corresponds to label E again, and cluster 4 aggregates label C and D. Note that k-means clustering separated label E data into two clusters, 1 and 3, while it combines label C and D data into cluster 2. Such anomaly is likely caused by the fact that the original label is created by binning the severity column of the record dataset, which means the label clusering only depends on 1 column. However, with k-means clustering, 7 other columns start to play a role, resulting in different clustering results. </p>
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k4_bar.png" width=600 border = 2px hspace="20" vspace="20">
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_label_bar.png" width=600 border = 2px hspace="20" vspace="20">
+            </td>
+        </tr> 
+        
+        <tr>
+            <td style="text-align: center;">
+                <p><font size="+2"><strong>II. Hierarchical Clustering</strong></font></p>
+                <figure>
+                    <img src="http://hanmingli.georgetown.domains/pics/101321/eucl_dendrogram.png" width=1400 border = 2px hspace="20" vspace="20">
+                    <figcaption><strong>Dendrogram based on Euclidean distance</strong></figcaption><br>
+                    <img src="http://hanmingli.georgetown.domains/pics/101321/man_dendrogram.png" width=1400 border = 2px hspace="20" vspace="20">
+                    <figcaption><strong>Dendrogram based on Manhattan distance</strong></figcaption><br>
+                    <img src="http://hanmingli.georgetown.domains/pics/101321/CosSim_dendrogram.png" width=1400 border = 2px hspace="20" vspace="20">
+                    <figcaption><strong>Dendrogram based on Cosine Similarity distance</strong></figcaption>
+                </figure>
+                
+                <p><strong><font size="+1">--------------------Result Analysis--------------------</font></font></strong></p>
+                <p> The Euclidean distance dendrogram suggests k = 5</p><br>
+                <p> The Manhattan distance dendrogram suggests k = 5</p><br>
+                <p> The Cosine Similarity distance dendrogram suggests k = 5</p><br>
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align: center;">
+                <p><font size="+2"><strong>III. Distance Matrices</strong></font></p>
+                    <figure>
+                        <img src="http://hanmingli.georgetown.domains/pics/101321/eucl_dis_heatmap.png" alt="Euclidean Distance Heatmap" width=800 border = 2px >
+                        <figcaption><strong>Euclidean Distance Heatmap</strong></figcaption><br>
+                        
+                        <br><img src="http://hanmingli.georgetown.domains/pics/101321/man_dis_heatmap.png" alt="Manhattan Distance Heatmap" width=800 border = 2px>
+                        <figcaption><strong>Manhattan Distance Heatmap</strong></figcaption><br>
+                        
+                        <br><img src="http://hanmingli.georgetown.domains/pics/101321/CosSim_dis_heatmap.png" alt="Cos Sim Distance Heatmap" width=800 border = 2px >
+                        <figcaption><strong>Cos Sim Distance Heatmap</strong></figcaption><br>
+                    </figure>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align: center;">
+                <p><font size="+2"><strong>IV. Determine Optimal k value</strong></font></p>
+                    <figure>
+                        <img src="http://hanmingli.georgetown.domains/pics/101321/opt_k_silhouette.png" width=800 border = 2px >
+                        <figcaption><strong>The silhouette method is used here to determine the best k value. According to the visualization, the optimal k should be 2.</strong></figcaption><br>
+                    </figure>
+                    <p><strong><font size="+1">--------------------Result Analysis--------------------</font></font></strong></p>
+                    <p>Based on the plot, the best k value is 2, however, k=2 is a rather conservative choice of k based on the visualizations of k-means clustering result. When k=2, the larger cluster of the two can still be clustered into smaller clusters based on visual inspection. </p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p><font size="+2"><strong>Summary</strong></font></p>
+                <p>In conclusion, for the wildfire record dataset, the best k value is either 4 or 5 based on k-means clustering with varying k and dendrograms. k = 2 suggested by the silhouette method is too conservative, and is therefore not considered for now.</p>
+            </td>
+        </tr>
+        </thead>
+    </table>
+    
+    <br><h1>
+        Text Data Clustering
+    </h1>   
+    
+    <table border="1" width = "100%">
+        <col style="width:20%">
+        <col style="width:50%">
+        <col style="width:30%">
+        <thead>
+        <tr>
+            <td style="width:20%;" align="center">
+                <p><strong>Links to files</strong></p><br>
+                <a href="http://hanmingli.georgetown.domains/CleanData/NewsData_cleaned_101321.csv"><strong>(1) Text dataset for clustering</strong></a><br>  
+                <br><a href="http://hanmingli.georgetown.domains/codes/Text_data_clustering.py" target="_blank"><strong>(2) [Python code] for text data clustering</strong></a> 
+            </td>
+            
+            <td style="width:50%;" align="center">
+                <p><strong>Text Dataset Preview</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/101321/text_data_preview.jpg" onClick='test(this)'>
+                <img style="display:block;" src="http://hanmingli.georgetown.domains/pics/101321/text_data_preview.jpg" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+            <td style="width:30%;" align="center">
+                <p><strong>WordCloud</strong></p>
+                <a target="_blank" href="http://hanmingli.georgetown.domains/pics/NewsData_wordcloud.png" onClick='test(this)'>
+                <img style="display:block;" src="http://hanmingli.georgetown.domains/pics/NewsData_wordcloud.png" width="100%" height="100%">
+                </a>
+                <p><i>Click on the image to enlarge</i></p>
+            </td>
+            
+        </tr>
+        </thead>
+    </table>
+    
+    <table border="1">
+        <thead>
+        <tr>
+            <td style="text-align: center;">
+                <p><font size="+2"><strong>I. k-means Clustering</strong></font></p>
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k2_text.png" width=800 border = 2px hspace="20" vspace="20">
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k4_text.png" width=800 border = 2px hspace="20" vspace="20">
+                <img src="http://hanmingli.georgetown.domains/pics/101321/kmeans_k6_text.png" width=800 border = 2px hspace="20" vspace="20">
+                
+                <p><strong><font size="+1">--------------------Result Analysis--------------------</font></font></strong></p>
+                <p>Based on the visualization, k = 2, 4 and 6 produce similar results for k-means clustering. It is clear that most of the vectors form one single cluser, with three other data points further away from the cluster. Since these three are single vectors, they are more likely to be outliers, rather than clusters. The outlier with label california is likely to be the result of incorrect labeling since all the labels were created manually.</p>
+            </td>
+        </tr> 
+        
+        <tr>
+            <td style="text-align: center;">
+                <p><font size="+2"><strong>II. Hierarchical Clustering</strong></font></p>
+                <figure>
+                    <img src="http://hanmingli.georgetown.domains/pics/101321/hierarchical_clustering.png" width=800 border = 2px>
+                    <figcaption><strong>Dendrogram based on Euclidean distance</strong></figcaption><br>
+                </figure>
+                
+                <p><strong><font size="+1">--------------------Result Analysis--------------------</font></font></strong></p>
+                <p>The dendrogram is very convoluted with too many branches, which suggests that the text dataset doesn't form a cluster. More texts might be required to improvement the result of clustering.</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align: center;">
+                <p><font size="+2"><strong>III. Density-based spatial clustering of applications with noise (DBSCAN)</strong></font></p>
+                    <figure>
+                        <img src="http://hanmingli.georgetown.domains/pics/101321/DBSCAN_label_prediction.jpg" width=800 border = 2px >
+                        <figcaption><strong>Label prediction using DBSCAN</strong></figcaption><br>
+                    </figure>
+                    <p>The label prediction is generated with DBSCAN(eps=5.6, min_samples=1), showing 7 clusters: [0,1,2,3,4,5,6].</p>
+                    
+                    <p><strong><font size="+1">--------------------Result Analysis--------------------</font></font></strong></p>
+                    <p>The result of DBSCAN agrees with the dendrogram, suggesting undesirable result for clustering. After fine tunning, DBSCAN produces 7 "clusters", but there is not a second cluster contains a number of data vectors greater than 2. In other words, there is only one real cluster, which is cluster 0.</p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td style="text-align: center;">
+                <p><font size="+2"><strong>IV. Determine Optimal k value</strong></font></p>
+                    <figure>
+                        <img src="http://hanmingli.georgetown.domains/pics/101321/opt_k_elbow.png" width=600 border = 2px >
+                        <figcaption><strong>Elbow method</strong></figcaption><br>
+                        <img src="http://hanmingli.georgetown.domains/pics/101321/opt_k_s&c.png" width=600 border = 2px >
+                        <figcaption><strong>Silhouette and Calinski methods</strong></figcaption><br>
+                    </figure>
+                    
+                    <p><strong><font size="+1">--------------------Result Analysis--------------------</font></font></strong></p>
+                    <p> All three methods for identifying the best value of k fail to determine the best k value. For the elbow method, there isn't a point where the slope of the curve starts to approach horizontal. For the silhouette method, there is no significant peaks, which should indicate the best k value. Lastly, for the Calinski method, the curve doesn't plateau at all, rather, the curve approches x-axis.  </p>
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+                <p><font size="+2"><strong>Summary</strong></font></p>
+                <p>The results of k-means clustering, hierarchical clustering as well as DBSCAN all indicate that the best k value is actually k=1, which means all data vectors are relatively close to each other and forms one cluster. Hence, the text dataset at hand is not suitable for clustering due to high similarity of texts. More text data needs to be gathered in order to produce a better clustering result.</p>
+            </td>
+        </tr>
+        </thead>
+    </table>
+</body>
+
+</HTML>
